@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <title>Cadastro de Usuário</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="folha">
+
+        <h1>Cadastro de Usuário</h1>
+
+        <p class="subtitulo">
+            Preencha o formulário abaixo com seus dados.
+        </p>
+
+        <form>
+
+            <div class="campo">
+                <label for="nome">Nome completo:</label>
+                <input type="text"
+                       id="nome"
+                       name="nome"
+                       placeholder="Digite seu nome completo" 
+                       required> <br> <br>
+           
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="exemplo@email.com"
+                       required> <br> <br>
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha:</label>
+                <input type="password"
+                       id="senha"
+                       name="senha"
+  placeholder="Digite sua senha"
+                       required> <br> <br>
+            </div>
+
+            <div class="campo">
+                <label for="data">Data de nascimento:</label>
+                <input type="date"
+                       id="data"
+                       name="data"> <br> <br>
+            </div>
+
+            <div class="campo">
+        <label for="telefone">Telefone:</label>
+                <input type="tel"
+          id="telefone"
+          name="telefone"
+                       placeholder="(00) 00000-0000"> <br> <br>
+            </div>
+
+            <div class="campo">
+
+                <p class="titulo">Sexo:</p>
+
+                <div class="opcoes">
+
+                    <div>
+                        <input type="radio"
+                               id="masculino"  
+                               name="sexo"
+                               value="masculino">
+
+                        <label for="masculino">Masculino</label> <br> 
+                    </div> 
+
+                    <div>
+                        <input type="radio"
+                               id="feminino"
+                               name="sexo"
+                               value="feminino">
+
+                        <label for="feminino">Feminino</label> <br> 
+                    </div>
+
+                    <div>
+                        <input type="radio"
+                               id="outro"
+                               name="sexo"
+                               value="outro">
+
+                        <label for="outro">Outro</label><br> <br> <br>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="campo">
+
+                <label for="cidade">Cidade:</label> <br> <br>
+
+                <select id="cidade" name="cidade"> =
+
+                    <option value="">
+                        Selecione uma cidade
+                    </option>
+
+                    <option value="curitiba">
+                        Curitiba
+                    </option>
+
+                    <option value="londrina">
+                        Londrina
+                    </option>
+
+                    <option value="maringa">
+                        Maringá
+                    </option>
+
+                    <option value="ponta-grossa">
+                        Ponta Grossa
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="termos"><br> <br>
+
+                <input type="checkbox"
+                       id="termos"
+                       name="termos"
+                       required>
+
+                <label for="termos"> 
+                    Aceito os termos de uso
+                </label> <br> <br>
+
+            </div>
+
+            <button type="submit"> 
+                Cadastrar 
+            </button> 
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
