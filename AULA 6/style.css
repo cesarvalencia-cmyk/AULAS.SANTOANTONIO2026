@@ -1,0 +1,153 @@
+{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+/* Folha de papel */
+
+.folha {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 45px;
+    background-color: white;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.20);
+}
+
+/* Título */
+
+h1 {
+    text-align: center;
+    color: #222;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Texto abaixo do título */
+
+.subtitulo {
+    text-align: center;
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+/* Cada campo fica separado */
+
+.campo {
+    margin-bottom: 22px;
+}
+
+/* Texto dos campos */
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+/* Campos de texto */
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #bbb;
+    border-radius: 5px;
+
+    font-size: 15px;
+    background-color: #fff;
+}
+
+/* Quando clicar no campo */
+
+input:focus,
+select:focus {
+    outline: none;
+    border: 2px solid #4a90e2;
+}
+
+/* Título Sexo */
+
+.titulo {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* Opções de sexo */
+
+.opcoes {
+    display: flex;
+    gap: 25px;
+}
+
+.opcoes div {
+    display: flex;
+    align-items: center;
+}
+
+.opcoes input {
+    width: auto;
+    margin-right: 7px;
+}
+
+.opcoes label {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Termos */
+
+.termos {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.termos input {
+    width: auto;
+    margin-right: 8px;
+}
+
+.termos label {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Botão */
+
+button {
+    width: 100%;
+    padding: 14px;
+
+    background-color: #4a90e2;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+/* Quando passar o mouse */
+
+button:hover {
+    background-color: #357abd;
+}
