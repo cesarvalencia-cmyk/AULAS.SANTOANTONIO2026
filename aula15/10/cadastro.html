@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Matrícula | FitLife</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">F</span>
+            FIT<span class="lime">LIFE</span>
+        </a>
+        <a href="index.html" class="back-link">← Voltar ao painel</a>
+    </header>
+
+    <main class="container form-container">
+        <section class="welcome">
+            <p class="eyebrow">CADASTRO DE ALUNO</p>
+            <h1>NOVA <span class="lime">MATRÍCULA</span></h1>
+            <p class="muted">
+                Preencha os dados para calcular a mensalidade.
+            </p>
+        </section>
+
+        <form action="processar.php" method="POST" class="card form-card">
+            <h2 class="section-title">01. Dados pessoais</h2>
+
+            <div class="form-grid">
+                <div class="field full-width">
+                    <label for="nome">Nome completo</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Nome completo do aluno"
+                        minlength="3"
+                        maxlength="100"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <div class="field">
+                    <label for="idade">Idade</label>
+                    <input
+                        type="number"
+                        id="idade"
+                        name="idade"
+                        min="18"
+                        max="120"
+                        placeholder="Ex.: 25"
+                        required
+                    >
+                    <small>Idade mínima: 18 anos.</small>
+                </div>
+
+                <div class="field">
+                    <label for="telefone">Telefone</label>
+                    <input
+                        type="tel"
+                        id="telefone"
+                        name="telefone"
+                        placeholder="(41) 99999-9999"
+                        minlength="10"
+                        maxlength="20"
+                        autocomplete="tel"
+                        required
+                    >
+                </div>
+
+                <div class="field full-width">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="aluno@exemplo.com"
+                        maxlength="150"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="field full-width">
+                    <label for="data_matricula">Data da matrícula</label>
+                    <input
+                        type="date"
+                        id="data_matricula"
+                        name="data_matricula"
+                        required
+                    >
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <h2 class="section-title">02. Escolha do plano</h2>
+
+            <div class="plan-options">
+                <label class="plan-option">
+                    <input type="radio" name="plano" value="basico" required>
+                    <span class="plan-content">
+                        <strong>Básico</strong>
+                        <span>Musculação</span>
+                        <b>R$ 89,90<span class="per-month"> / mês</span></b>
+                    </span>
+                </label>
+
+                <label class="plan-option">
+                    <input type="radio" name="plano" value="plus">
+                    <span class="plan-content">
+                        <strong>Plus</strong>
+                        <span>Musculação e aulas coletivas</span>
+                        <b>R$ 129,90<span class="per-month"> / mês</span></b>
+                    </span>
+                </label>
+
+                <label class="plan-option">
+                    <input type="radio" name="plano" value="premium">
+                    <span class="plan-content">
+                        <strong>Premium</strong>
+                        <span>Todas as modalidades</span>
+                        <b>R$ 179,90<span class="per-month"> / mês</span></b>
+                    </span>
+                </label>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <h2 class="section-title">03. Forma de pagamento</h2>
+
+            <div class="field">
+                <label for="pagamento">Selecione o pagamento</label>
+                <select id="pagamento" name="pagamento" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="pix">PIX — 10% de desconto</option>
+                    <option value="cartao">Cartão — valor integral</option>
+                </select>
+            </div>
+
+            <div class="notice">
+                <strong>Desconto especial:</strong>
+                alunos com 60 anos ou mais recebem 15% de desconto.
+                Os descontos não são acumulativos.
+            </div>
+
+            <div class="form-actions">
+                <a href="index.html" class="btn btn-secondary">Cancelar</a>
+                <button type="submit" class="btn btn-primary">
+                    Calcular e emitir comprovante →
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        FitLife Academia · Sistema interno de matrículas
+    </footer>
+</body>
+</html>
